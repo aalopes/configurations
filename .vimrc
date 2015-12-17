@@ -2,8 +2,13 @@
 " Alexandre Lopes (2015)
 
 set nocp
-color delek
+color delek 
 set tabstop=4
+set splitright
+
+" Highlight text beyound the 80 column limit
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
 
 " Expand everything to spaces except if we're dealing with makefiles
 let _curfile = expand("%:t")
