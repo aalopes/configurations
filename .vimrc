@@ -3,6 +3,7 @@
 
 set nocp
 color delek 
+syntax on
 set tabstop=4
 set splitright
 
